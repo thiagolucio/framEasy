@@ -1,0 +1,333 @@
+/** framEasy - Framework mais simples do mundo somente usando HTML e CSS
+autor:Thiago Lúcio Bittencourt;
+url:http://www.thiagolucio.com.br; https://github.com/thiagolucio/framEasy.git;
+**/
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+}
+
+/* Webfont: LatoLatin-Regular */@font-face {
+    font-family: 'LatoLatin';
+    src: url('../fonts/LatoLatin-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoLatin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LatoLatin-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatin-Regular.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('../fonts/LatoLatin-Italic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoLatin-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LatoLatin-Italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatin-Italic.ttf') format('truetype'); 
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: LatoLatinMed-Regular */@font-face {
+    font-family: 'LatoLatinMed';
+    src: url('../fonts/LatoLatinMed-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoLatinMed-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LatoLatinMed-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatinMed-Regular.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: LatoLatinThin-Regular */@font-face {
+    font-family: 'LatoLatinThin';
+    src: url('../fonts/LatoLatinThin-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoLatinThin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LatoLatinThin-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatinThin-Regular.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: LatoLatinThin-Italic */@font-face {
+    font-family: 'LatoLatinThin';
+    src: url('../fonts/LatoLatinThin-Italic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoLatinThin-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LatoLatinThin-Italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatinThin-Italic.ttf') format('truetype'); 
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: LatoLatinSemBd-Regular */@font-face {
+    font-family: 'LatoLatinSemBd';
+    src: url('../fonts/LatoLatinSemBd-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoLatinSemBd-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/../fonts/LatoLatinSemBd-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatinSemBd-Regular.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: LatoLatinBlack-Italic */@font-face {
+    font-family: 'LatoLatinBlack';
+    src: url('../fonts/../fonts/../fonts/../fonts/LatoLatinBlack-Italic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/../fonts/../fonts/LatoLatinBlack-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/../fonts/LatoLatinBlack-Italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatinBlack-Italic.ttf') format('truetype'); 
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/*padroes de textos*/
+h1 {
+	font-family: 'LatoLatinThin', Serif;
+	font-size: 3.0em;
+}
+
+h2 {
+	font-family: 'LatoLatinThin', Serif;
+	font-size: 2.5em;
+}
+/*sistema de contanier*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*estilos de linha*/
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/*estilo grids - desktops e notebooks*/
+@media (min-width: 1200px) {
+  .col-pc-1, .col-pc-2, .col-pc-3, .col-pc-4, .col-pc-5, .col-pc-6, .col-pc-7, .col-pc-8, .col-pc-9, .col-pc-10, .col-pc-11, .col-pc-12 {
+    float: left;
+  }
+  .col-pc-12 {
+    width: 100%;
+  }
+  .col-pc-11 {
+    width: 91.66666667%;
+  }
+  .col-pc-10 {
+    width: 83.33333333%;
+  }
+  .col-pc-9 {
+    width: 75%;
+  }
+  .col-pc-8 {
+    width: 66.66666667%;
+  }
+  .col-pc-7 {
+    width: 58.33333333%;
+  }
+  .col-pc-6 {
+    width: 50%;
+  }
+  .col-pc-5 {
+    width: 41.66666667%;
+  }
+  .col-pc-4 {
+    width: 33.33333333%;
+  }
+  .col-pc-3 {
+    width: 25%;
+  }
+  .col-pc-2 {
+    width: 16.66666667%;
+  }
+  .col-pc-1 {
+    width: 8.33333333%;
+  }
+  .col-pc-pull-12 {
+    right: 100%;
+  }
+  .col-pc-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-pc-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-pc-pull-9 {
+    right: 75%;
+  }
+  .col-pc-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-pc-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-pc-pull-6 {
+    right: 50%;
+  }
+  .col-pc-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-pc-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-pc-pull-3 {
+    right: 25%;
+  }
+  .col-pc-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-pc-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-pc-pull-0 {
+    right: auto;
+  }
+  .col-pc-push-12 {
+    left: 100%;
+  }
+  .col-pc-push-11 {
+    left: 91.66666667%;
+  }
+  .col-pc-push-10 {
+    left: 83.33333333%;
+  }
+  .col-pc-push-9 {
+    left: 75%;
+  }
+  .col-pc-push-8 {
+    left: 66.66666667%;
+  }
+  .col-pc-push-7 {
+    left: 58.33333333%;
+  }
+  .col-pc-push-6 {
+    left: 50%;
+  }
+  .col-pc-push-5 {
+    left: 41.66666667%;
+  }
+  .col-pc-push-4 {
+    left: 33.33333333%;
+  }
+  .col-pc-push-3 {
+    left: 25%;
+  }
+  .col-pc-push-2 {
+    left: 16.66666667%;
+  }
+  .col-pc-push-1 {
+    left: 8.33333333%;
+  }
+  .col-pc-push-0 {
+    left: auto;
+  }
+  .col-pc-offset-12 {
+    margin-left: 100%;
+  }
+  .col-pc-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-pc-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-pc-offset-9 {
+    margin-left: 75%;
+  }
+  .col-pc-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-pc-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-pc-offset-6 {
+    margin-left: 50%;
+  }
+  .col-pc-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-pc-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-pc-offset-3 {
+    margin-left: 25%;
+  }
+  .col-pc-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-pc-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-pc-offset-0 {
+    margin-left: 0;
+  }
+}
+/*estilo das grids - celulares e mobiles*/
+.col-cel-1, .col-sm-1, .col-md-1, .col-pc-1, .col-cel-2, .col-sm-2, .col-md-2, .col-pc-2, .col-cel-3, .col-sm-3, .col-md-3, .col-pc-3, .col-cel-4, .col-sm-4, .col-md-4, .col-pc-4, .col-cel-5, .col-sm-5, .col-md-5, .col-pc-5, .col-cel-6, .col-sm-6, .col-md-6, .col-pc-6, .col-cel-7, .col-sm-7, .col-md-7, .col-pc-7, .col-cel-8, .col-sm-8, .col-md-8, .col-pc-8, .col-cel-9, .col-sm-9, .col-md-9, .col-pc-9, .col-cel-10, .col-sm-10, .col-md-10, .col-pc-10, .col-cel-11, .col-sm-11, .col-md-11, .col-pc-11, .col-cel-12, .col-sm-12, .col-md-12, .col-pc-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-cel-1, .col-cel-2, .col-cel-3, .col-cel-4, .col-cel-5, .col-cel-6, .col-cel-7, .col-cel-8, .col-cel-9, .col-cel-10, .col-cel-11, .col-cel-12 {
+  float: left;
+}
+.col-cel-12 {
+  width: 100%;  
+}
+.col-cel-11 {
+  width: 91.66666667%;
+}
+.col-cel-10 {
+  width: 83.33333333%;
+}
+.col-cel-9 {
+  width: 75%;
+}
+.col-cel-8 {
+  width: 66.66666667%;
+}
+.col-cel-7 {
+  width: 58.33333333%;
+}
+.col-cel-6 {
+  width: 50%;
+}
+.col-cel-5 {
+  width: 41.66666667%;
+}
+.col-cel-4 {
+  width: 33.33333333%;
+}
+.col-cel-3 {
+  width: 25%;
+}
+.col-cel-2 {
+  width: 16.66666667%;
+}
+.col-cel-1 {
+  width: 8.33333333%;
+}
