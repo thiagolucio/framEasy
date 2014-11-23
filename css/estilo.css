@@ -1,3 +1,4 @@
+html, body {overflow-x: hidden;}
 .topo {
   width: 100%;
   height: auto;
@@ -6,11 +7,37 @@
   border-bottom: 5px solid #1758A7;
 }
 
-.titulos { margin: 100px 0px; color: #3B3B3B;}
-
 .logo {
-  margin: 60px 0px;  
+  margin: 60px 50px;  
   position: absolute;
+}
+/*menu*/
+nav {
+  font-family: 'LatoLatin';
+  width: 100%;
+  height: 20px; 
+  padding: 20px;
+  text-align: center;  
+}
+nav ul {margin-top: -10px;}
+
+nav ul a {
+  padding: 0px 30px;
+  color: #ecf0f1;
+  font-size: 1.2em;
+  text-decoration: none;
+  vertical-align: middle;  
+}
+
+nav ul.col-cel {display: none;}
+
+nav ul a:hover {
+  color: #3498db;    
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  transition: all ease .5s;   
 }
 
 .img {
@@ -18,11 +45,13 @@
   height: auto;
 }
 
+.titulos { margin: 100px 0px; color: #3B3B3B;}
+
 .textoLatEsq {
 position: absolute;
 width: 500px;
 text-align: justify;
-margin: -100px 0px 0px 150px;
+margin: -100px 0px 0px 130px;
 font-size: 20px;
 }
 
@@ -39,40 +68,30 @@ font-size: 20px;
   text-align: right;
   margin:auto;
   width: 100%;
+  height: auto;
 }
 
 
-nav {
-  font-family: 'LatoLatinSemBd';
-  width: 100%;
-  height: 20px; 
-  padding: 20px;
-  text-align: center;  
-}
-nav ul {margin-top: -10px;}
-
-nav ul a {
-  padding: 0px 30px;
-  color: #ecf0f1;
-  font-size: 1.2em;
-  text-decoration: none;
-  vertical-align: middle;  
+.camposTextos {
+  margin: 50px 0;
+  text-align: justify;
+  font-size: 20px;
 }
 
-nav ul a:hover {
-  color: #3498db;    
-  -webkit-transition: all ease .5s;
-  -o-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  -ms-transition: all ease .5s;
-  transition: all ease .5s;   
+pre::before {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;  
+  content: '<link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css">';
 }
 
 /*resolucoes menores*/
 @media (max-width: 768px) {
-  .textoLatEsq {width: 300px; margin: -120px 0px 0px 150px; padding: 8px; }
+  .textoLatEsq {width: 250px; margin: -120px 0px 0px 130px; padding: 8px; }
   .titulos { margin-top: 200px; margin-bottom: 50px; width: 90%;}
-  nav {
-    display: block;
-  }
-}
+  nav ul.col-pc {display: none;}
+  nav ul.col-cel {display: inline-block; margin-left: -50px;}
+  nav ul a { padding: 0px 10px;}
+.logo { margin: 60px 5px;}
+
+}/*final resolucao maxima de 768*/
