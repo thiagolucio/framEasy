@@ -9,6 +9,12 @@ list-style:none;
 vertical-align:baseline;
 }
 
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
 /* Webfont: LatoLatin-Regular */@font-face {
     font-family: 'LatoLatin';
     src: url('../fonts/LatoLatin-Regular.eot'); /* IE9 Compat Modes */
@@ -83,35 +89,12 @@ vertical-align:baseline;
     text-rendering: optimizeLegibility;
 }
 /*posicionamento dos corpos*/
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 /*configuração genérica de links*/
-a {
-  background-color: transparent;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
+a { background-color: transparent; }
+a:active, a:hover { outline: 0; }
 /*bold tag b*/
-b,
-strong {
-  font-weight: bold;
-}
-
+b, strong { font-weight: bold; }
 /*padroes de textos*/
 h1 {
 	font-family: 'LatoLatinThin', Serif;
@@ -150,6 +133,7 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
