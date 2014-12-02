@@ -528,6 +528,46 @@ p {
   width: 8.33333333%;
 }
 
+.col-cel-offset-12 {
+  margin-left: 100%;
+}
+.col-cel-offset-11 {
+  margin-left: 91.66666667%;
+}
+.col-cel-offset-10 {
+  margin-left: 83.33333333%;
+}
+.col-cel-offset-9 {
+  margin-left: 75%;
+}
+.col-cel-offset-8 {
+  margin-left: 66.66666667%;
+}
+.col-cel-offset-7 {
+  margin-left: 58.33333333%;
+}
+.col-cel-offset-6 {
+  margin-left: 50%;
+}
+.col-cel-offset-5 {
+  margin-left: 41.66666667%;
+}
+.col-cel-offset-4 {
+  margin-left: 33.33333333%;
+}
+.col-cel-offset-3 {
+  margin-left: 25%;
+}
+.col-cel-offset-2 {
+  margin-left: 16.66666667%;
+}
+.col-cel-offset-1 {
+  margin-left: 8.33333333%;
+}
+.col-cel-offset-0 {
+  margin-left: 0;
+}
+
 /*alinhamento da direita*/
 .pull-right {
   right: 0;
